@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-bg-color: #ffffff;
+  --main-link-color: #afb1b8;
 }
 
 body {
@@ -50,7 +51,7 @@ ol {
 }
 .phone-icon {
   margin-right: 10px;
-  /* padding-top: 5px; */
+  fill: var(--primery-text-color);
 }
 .link-phone {
   text-decoration: none;
@@ -63,6 +64,7 @@ ol {
 }
 .mail-icon {
   margin-right: 10px;
+  fill: var(--primery-text-color);
 }
 .link:hover .mail-icon,
 .link:focus .mail-icon {
@@ -307,12 +309,13 @@ address {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100%-9 * 30) / 9);
-
-  /* border: 1px solid #eeeeee; */
 }
-.projects-card:hover {
+.project-style:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .project-border {
   font-family: Roboto, sans-serif;
@@ -361,7 +364,6 @@ address {
 .team-card {
   flex-basis: calc((100% - 4 * 30) / 4);
   background: #ffffff;
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -376,6 +378,9 @@ address {
   font-size: 16px;
   line-height: 1.18;
 }
+.social-head {
+  padding-bottom: 30px;
+}
 .social {
   display: flex;
   text-align: center;
@@ -388,9 +393,8 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
+  fill: var(--main-link-color);
   background-color: #ffffff;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 
@@ -415,9 +419,8 @@ address {
   justify-content: center;
   width: 170px;
   height: 92px;
-  fill: #afb1b8;
+  fill: var(--main-link-color);
   background-color: var(--primery-bg-color);
-  margin-bottom: 94px;
   cursor: pointer;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -433,7 +436,6 @@ address {
   border-color: var(--accent-color);
 }
 .client-text {
-  padding-top: 94px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -451,12 +453,20 @@ address {
   font-size: 14px;
   line-height: 1.71;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .join-buttons {
-  /* margin-left: 70px; */
+  margin-left: 70px;
 }
 .join-title {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-bg-color);
   margin-bottom: 20px;
